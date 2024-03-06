@@ -1,0 +1,148 @@
+﻿@page "/"
+@inherits CompanyDetailsBase
+@*
+@if(CompanyDetails==null)
+{
+    <h3>Loading company details...</h3>
+}
+else
+{
+    <h3> Sczegóły firmy</h3>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Data aktualizacji</th>
+                <th>Skrócona nazwa firmy</th>
+                <th>Nazwa firmy</th>
+                <th>NIP</th>
+                <th>Ulica</th>
+                <th>Numer</th>
+                <th>Numer lokalu</th>
+                <th>Kod pocztowy</th>
+                <th>Miejscowość</th>
+                <th>Nazwa banku</th>
+                <th>Waluta</th>
+                <th>Numer konta bankowego</th>
+                <th>Numer telefonu</th>
+                <th>Adres email</th>
+            </tr>
+        </thead>
+        <tbody>
+        @foreach (var companyDetail in CompanyDetails)
+        {
+                    <tr>
+                        <td>@companyDetail.UpdateDate.ToShortDateString()</td>
+                        <td>@companyDetail.ShortCompanyName</td>
+                        <td>@companyDetail.CompanyName</td>
+                        <td>@companyDetail.NipNumber</td>
+                        <td>@companyDetail.StreetName</td>
+                        <td>@companyDetail.BildingNumber</td>
+                        <td>@companyDetail.ApartmentNumber</td>
+                        <td>@companyDetail.ZipCode</td>
+                        <td>@companyDetail.City</td>
+                        <td>@companyDetail.BankName</td>
+                        <td>@companyDetail.Currency</td>
+                        <td>@companyDetail.BankAccountNumber</td>
+                        <td>@companyDetail.PhoneNumber</td>
+                        <td>@companyDetail.AddressEmail</td>
+                    </tr>
+        }
+        </tbody>
+    </table>
+
+        <table id="customers">
+      <tr>
+        <th>Company</th>
+        <th>Contact</th>
+        <th>Country</th>
+      </tr>
+      <tr>
+        <td>Alfreds Futterkiste</td>
+        <td>Maria Anders</td>
+        <td>Germany</td>
+      </tr>
+      <tr>
+        <td>Berglunds snabbköp</td>
+        <td>Christina Berglund</td>
+        <td>Sweden</td>
+      </tr>
+      <tr>
+        <td>Centro comercial Moctezuma</td>
+        <td>Francisco Chang</td>
+        <td>Mexico</td>
+      </tr>
+      <tr>
+        <td>Ernst Handel</td>
+        <td>Roland Mendel</td>
+        <td>Austria</td>
+      </tr>
+      <tr>
+        <td>Island Trading</td>
+        <td>Helen Bennett</td>
+        <td>UK</td>
+      </tr>
+      <tr>
+        <td>Königlich Essen</td>
+        <td>Philip Cramer</td>
+        <td>Germany</td>
+      </tr>
+      <tr>
+        <td>Laughing Bacchus Winecellars</td>
+        <td>Yoshi Tannamuri</td>
+        <td>Canada</td>
+      </tr>
+      <tr>
+        <td>Magazzini Alimentari Riuniti</td>
+        <td>Giovanni Rovelli</td>
+        <td>Italy</td>
+      </tr>
+      <tr>
+        <td>North/South</td>
+        <td>Simon Crowther</td>
+        <td>UK</td>
+      </tr>
+      <tr>
+        <td>Paris spécialités</td>
+        <td>Marie Bertrand</td>
+        <td>France</td>
+      </tr>
+    </table>
+
+
+        <div class="container">
+      <h2>Responsive Tables Using LI <small>Triggers on 767px</small></h2>
+      <ul class="responsive-table">
+        <li class="table-header">
+          <div class="col col-1">Job Id</div>
+          <div class="col col-2">Customer Name</div>
+          <div class="col col-3">Amount Due</div>
+          <div class="col col-4">Payment Status</div>
+        </li>
+        <li class="table-row">
+          <div class="col col-1" data-label="Job Id">42235</div>
+          <div class="col col-2" data-label="Customer Name">John Doe</div>
+          <div class="col col-3" data-label="Amount">$350</div>
+          <div class="col col-4" data-label="Payment Status">Pending</div>
+        </li>
+        <li class="table-row">
+          <div class="col col-1" data-label="Job Id">42442</div>
+          <div class="col col-2" data-label="Customer Name">Jennifer Smith</div>
+          <div class="col col-3" data-label="Amount">$220</div>
+          <div class="col col-4" data-label="Payment Status">Pending</div>
+        </li>
+        <li class="table-row">
+          <div class="col col-1" data-label="Job Id">42257</div>
+          <div class="col col-2" data-label="Customer Name">John Smith</div>
+          <div class="col col-3" data-label="Amount">$341</div>
+          <div class="col col-4" data-label="Payment Status">Pending</div>
+        </li>
+        <li class="table-row">
+          <div class="col col-1" data-label="Job Id">42311</div>
+          <div class="col col-2" data-label="Customer Name">John Carpenter</div>
+          <div class="col col-3" data-label="Amount">$115</div>
+          <div class="col col-4" data-label="Payment Status">Pending</div>
+        </li>
+      </ul>
+    </div>*@
+}
