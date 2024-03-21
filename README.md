@@ -19,7 +19,7 @@ The application was created to consolidate knowledge after completing the course
 
 The project is created with:
 
-* .NET version: 5.0
+* .NET version: 6.0
 
 * AutoMapper version: 8.1.0
 
@@ -27,9 +27,9 @@ The project is created with:
 
 * FluentValidation AspNetCore version: 9.4.0
 
-* Authentication JwtBearer version: 5.0.17
+* Authentication JwtBearer version: 6.0.17
 
-* Microsoft Entity Framework Core version: 5.0.17
+* Microsoft Entity Framework Core version: 6.0.17
 
 * Microsoft SQL Server Database
 
@@ -43,7 +43,7 @@ The project is created with:
 
 ###  REST API (Facturosaurus.Api):
 -   User account management
-	(Creating new, deleting, modifying, assigning user roles, authorization and authentication using the jwt token)
+	(Creating new, deleting, modifying, assigning user roles, authorization and authentication using the JWT token)
 
 -   Company's data
 	(Updating company data. Downloading current data and data for a specific date)
