@@ -37,7 +37,8 @@ namespace Facturosaurus.Forms
 
         private void RefreshList()
         {
-            //W przyszłości filtrowanie na fazie zapytania
+            // FUTURE: Change your approuch to retrieving data, use pagination.
+
             var returnAllType = string.IsNullOrEmpty(cbxInvoiceTypeFilter.SelectedText.Trim());
             var returnAllNo = string.IsNullOrEmpty(txtNumberFilter.Text.Trim());
             var returnAllMonth = string.IsNullOrEmpty(txtMonthFilter.Text.Trim());
